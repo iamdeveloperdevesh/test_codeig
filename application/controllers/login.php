@@ -12,7 +12,6 @@ class Login extends CI_Controller {
     public function index() {
 
         // Load login view
-        $this->load->helper('url');
         $this->load->view('login_views');
     }
 
