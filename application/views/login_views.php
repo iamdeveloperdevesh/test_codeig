@@ -12,8 +12,14 @@
     <label for="exampleInputPassword1" class="form-label">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" required>
   </div>
-  <div class="mb-2">
-    <a class="form-check-label" for="exampleCheck1" href="<?= base_url() ?>Verification_controller">Forgot Password</a>
+  <div class="d-flex mb-2">
+    <div class="me-auto d-flex">
+      <p class="me-2">Don't have an account?</p>
+      <a class="form-check-label" for="exampleCheck1" href="<?= base_url() ?>signup">Signup</a>
+    </div>
+    <div>
+      <a class="form-check-label" for="exampleCheck1" href="<?= base_url() ?>Verification_controller">Forgot Password</a>
+    </div>
   </div>
   <button type="submit" class="btn btn-primary">Login</button>
 </form>
