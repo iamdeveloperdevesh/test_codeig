@@ -189,6 +189,7 @@ $config['controller_trigger'] = 'c';
 $config['function_trigger'] = 'm';
 $config['directory_trigger'] = 'd';
 
+
 /*
 |--------------------------------------------------------------------------
 | Allow $_GET array
@@ -530,3 +531,9 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+$config['hostname'] = 'localhost';
+$config['username'] = 'myusername';
+$config['password'] = 'mypassword';
+$config['database'] = 'mydatabase';
+$config['dbdriver'] = 'mysqli';
+

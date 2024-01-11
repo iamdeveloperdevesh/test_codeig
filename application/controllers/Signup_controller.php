@@ -25,12 +25,20 @@ class Signup_controller extends CI_Controller
             $this->form_validation->set_rules('email', 'email', 'required');
             $this->form_validation->set_rules('password', 'Password', 'required');
             $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'required|matches[password]');
-    
+            // $getdata = $this->input->get();
+            $postdata = $this->input->post();
+            
+            
+            
             if($this->form_validation->run() == FALSE){
                 
             }
             else {
-                redirect('login');
+                echo"<pre>";                
+                $this->load->model('signup_model');
+                $this->signup_model->add_data($postdata);
+                // print_r($postdata);
+                // redirect('login');
             }
         }
         $this->load->view('signup_view');
